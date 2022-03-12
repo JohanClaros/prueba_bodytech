@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class prodcontrol extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -18,7 +18,7 @@ class prodcontrol extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Crea el producto
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -35,7 +35,7 @@ class prodcontrol extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * muestra el producto
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -46,7 +46,7 @@ class prodcontrol extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * actualiza
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -60,7 +60,7 @@ class prodcontrol extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * remueve el producto por id
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -71,7 +71,7 @@ class prodcontrol extends Controller
     }
 
      /**
-     * Search for a name
+     * busca por nombre
      *
      * @param  str  $nombre
      * @return \Illuminate\Http\Response
