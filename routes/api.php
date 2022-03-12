@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::resource('products',prodcontrol::class);
-
+Route::get('/products/search/{nombre}',[prodcontrol::class,'search']);
 
 
 /*
