@@ -1,3 +1,14 @@
+![image](https://user-images.githubusercontent.com/28897572/158048511-65298499-9473-46b0-ab27-35af86c803c5.png)
+
+
+La presente API REST fue contruida con laravel 8. Por favor mirar la documentaicon API en
+
+localhost:8000/
+
+Para Testearla, puede usar el acceso a la coleccion de postman, la encuentra en las ramas de desarrollo o master:
+/PostmanTestingCollection
+
+
 
 # prueba_bodytech
 Repositorio para enviar reto de backend a bodytech
