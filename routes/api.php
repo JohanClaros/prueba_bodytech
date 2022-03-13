@@ -16,22 +16,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::resource('products', ProductController::class);
+// Route::resource('products', prodcontrol::class);
 
 // Public routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::get('/products', [ProductController::class, 'index']);
-Route::get('/products/{id}', [ProductController::class, 'show']);
-Route::get('/products/search/{name}', [ProductController::class, 'search']);
+Route::get('/products', [prodcontrol::class, 'index']);
+Route::get('/products/{id}', [prodcontrol::class, 'show']);
+Route::get('/products/search/{name}', [prodcontrol::class, 'search']);
+
+
 
 
 // Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::post('/products', [ProductController::class, 'store']);
-    Route::put('/products/{id}', [ProductController::class, 'update']);
-    Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+    Route::post('/products', [prodcontrol::class, 'store']);
+    Route::put('/products/{id}', [prodcontrol::class, 'update']);
+    Route::delete('/products/{id}', [prodcontrol::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/products-vista', [prodcontrol::class, 'vista']);
+    Route::get('/products-compra', [prodcontrol::class, 'compra']);
 });
 
 
